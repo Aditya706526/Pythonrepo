@@ -1,5 +1,4 @@
 from time import time
-
 def timer(func):
     def wrapper(n):
         t1 = time()
@@ -7,6 +6,7 @@ def timer(func):
         t2 = time()
         print(t2 - t1)
     return wrapper
+
 
 @timer
 def sum(n):
@@ -16,4 +16,3 @@ def sum(n):
     return print(sum)
 
 sum(1000000)
-
